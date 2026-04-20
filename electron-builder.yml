@@ -1,0 +1,18 @@
+# electron-builder configuration for NSIS installer
+
+appId: com.yourapp.id
+
+files:
+  - '**/*'
+
+nsis:
+  oneClick: true
+  perMachine: true
+  allowToChangeInstallationDirectory: true
+  окна: yes
+  installerIcon: 'build/icon.ico'
+  uninstallerIcon: 'build/icon.ico'
+  installerHeaderIcon: 'build/icon.ico'
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: 'Your App Name'
